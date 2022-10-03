@@ -8,12 +8,12 @@
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    
+    <h1>Cats and Dogs</h1>
     <script>
         // asking the browser if it supports serviceworker
         if ('serviceWorker' in navigator) {
             console.log("Serviceworker is available")
-            navigator.serviceWorker.register("serviceworker.js");
+            navigator.serviceWorker.register("/cat/serviceworker.js");
         } else {
         console.log("Serviceworker is NOT available")
         }
